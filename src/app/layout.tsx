@@ -1,10 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Noto_Sans_Javanese } from 'next/font/google'
 import StyledJsxRegistry from './registry'
-import Navbar from './components/Navbar'
+import Navbar from '../components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const noto = Noto_Sans_Javanese({ weight: '400', subsets: ['javanese'] })
 
 export const metadata: Metadata = {
   title: 'Revealers Media',
@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body style={{maxWidth: '1500px', margin: '0 auto'}} className={noto.className}>
         <StyledJsxRegistry>
-          <div className='flex min-h-screen'>
+          <div className='flex min-h-screen p-2'>
             <Navbar />
             {children}
           </div>
