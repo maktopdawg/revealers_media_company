@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{maxWidth: '1500px', margin: '0 auto'}} className={noto.className}>
+      <body style={{maxWidth: '1700px', margin: '0 auto'}} className={noto.className}>
         <StyledJsxRegistry>
           <div className='flex min-h-screen p-2'>
             <Navbar />

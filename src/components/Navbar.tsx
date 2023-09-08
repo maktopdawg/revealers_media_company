@@ -24,7 +24,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="flex flex-col justify-between items-center pt-12 gap-6 w-20">
+        <nav className="flex flex-col justify-between items-center pt-12 gap-10 w-20">
             <div className="flex flex-col items-center gap-2">
                 {SidebarData.map((item) => (
                     <Link href="#">
